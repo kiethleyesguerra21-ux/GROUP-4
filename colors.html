@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colors</title>
+
+<style>
+
+  /* ===== MOVING BACKGROUND ===== */
+  body {
+    font-family: Arial, sans-serif;
+    background: url('colorback.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: movebg 25s linear infinite;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+
+
+  /* ===== RIGHT SIDEBAR MENU ===== */
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 180px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  /* ===== MAIN CONTENT ===== */
+  .content {
+    margin-right: 220px; /* space for sidebar */
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  /* Color Boxes Layout */
+  .color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .color-box {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  }
+
+  /* Colors */
+  .red { background: #e74c3c; }
+  .blue { background: #3498db; }
+  .green { background: #2ecc71; }
+  .yellow { background: #f1c40f; color: #000; }
+  .purple { background: #9b59b6; }
+  .orange { background: #e67e22; }
+
+</style>
+</head>
+
+<body>
+
+<!-- RIGHT SIDEBAR -->
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="colors.html">Colors</a>
+  <a href="shape.html">Shape</a>
+  <a href="animals.html">Animals</a>
+  <a href="alphabet.html">Alphabet</a>
+  <a href="numbers.html">Numbers</a>
+  <a href="story.html">Story</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+  <h1>COLORS</h1>
+
+  <div class="color-container">
+    <div class="color-box red">Red</div>
+    <div class="color-box blue">Blue</div>
+    <div class="color-box green">Green</div>
+    <div class="color-box yellow">Yellow</div>
+    <div class="color-box purple">Purple</div>
+    <div class="color-box orange">Orange</div>
+  </div>
+
+</div>
+
+</body>
+</html>
