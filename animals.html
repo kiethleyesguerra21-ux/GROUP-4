@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animals</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('animalback.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-right: 200px;
+      padding: 20px;
+    }
+
+    /* ===== RIGHT SIDEBAR MENU ===== */
+    .sidebar {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 180px;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      margin: 0 10px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .content {
+      margin-right: 200px; /* space for right sidebar */
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 20px;
+    }
+
+    /* Animal Grid */
+    .animals-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .animal-box {
+      background: rgb(26, 253, 6);
+      border-radius: 15px;
+      padding: 15px;
+      transition: transform 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+
+    .animal-box:hover {
+      transform: scale(1.1);
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .animal-box img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .animal-name {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- ===== RIGHT SIDEBAR MENU ===== -->
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="colors.html">Colors</a>
+  <a href="shape.html">Shape</a>
+  <a href="animals.html">Animals</a>
+  <a href="alphabet.html">Alphabet</a>
+  <a href="numbers.html">Numbers</a>
+  <a href="story.html">Story</a>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="content">
+
+  <h1>ANIMALS</h1>
+
+  <div class="animals-container">
+
+    <div class="animal-box">
+      <img src="dog.jpg" alt="Dog">
+      <div class="animal-name">Dog</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="cat.jpg" alt="Cat">
+      <div class="animal-name">Cat</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="https://placebear.com/150/100" alt="Bear">
+      <div class="animal-name">Bear</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="bird.jpg" alt="Bird">
+      <div class="animal-name">Bird</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="fih.jpg" alt="Fish">
+      <div class="animal-name">Fish</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="horse.jpg" alt="Horse">
+      <div class="animal-name">Horse</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="lion.jpg" alt="Lion">
+      <div class="animal-name">Lion</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="monkey.jpg" alt="Monkey">
+      <div class="animal-name">Monkey</div>
+    </div>
+
+    <div class="animal-box">
+      <img src="t.jpg" alt="T-rex">
+      <div class="animal-name">T-rex</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
